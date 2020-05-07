@@ -720,7 +720,7 @@ RUN \
     jupyter labextension install @krassowski/jupyterlab-lsp && \
     # For Plotly
     jupyter labextension install @jupyterlab/plotly-extension && \
-    jupyter labextension install jupyterlab-chart-editor && \
+    #jupyter labextension install jupyterlab-chart-editor && \
     # For holoview
     jupyter labextension install @pyviz/jupyterlab_pyviz && \
     # Install jupyterlab variable inspector - https://github.com/lckr/jupyterlab-variableInspector
