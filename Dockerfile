@@ -457,13 +457,6 @@ RUN \
     # Cleanup
     clean-layer.sh
 
-## ungit
-COPY resources/tools/ungit.sh $RESOURCES_PATH/tools/ungit.sh
-RUN \
-    /bin/bash $RESOURCES_PATH/tools/ungit.sh --install && \
-    # Cleanup
-    clean-layer.sh
-
 ## netdata
 COPY resources/tools/netdata.sh $RESOURCES_PATH/tools/netdata.sh
 RUN \
@@ -472,13 +465,6 @@ RUN \
     clean-layer.sh
 
 ## Glances webtool is installed in python section below
-
-## Filebrowser
-COPY resources/tools/filebrowser.sh $RESOURCES_PATH/tools/filebrowser.sh
-RUN \
-    /bin/bash $RESOURCES_PATH/tools/filebrowser.sh --install && \
-    # Cleanup
-    clean-layer.sh
 
 ARG ARG_WORKSPACE_FLAVOR="full"
 ENV WORKSPACE_FLAVOR=$ARG_WORKSPACE_FLAVOR
