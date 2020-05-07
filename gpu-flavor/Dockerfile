@@ -1,6 +1,6 @@
 ARG ARG_WORKSPACE_VERSION="latest"
 # Build from full flavor of workspace with same version
-FROM mltooling/ml-workspace:$ARG_WORKSPACE_VERSION
+FROM jagpran/ml-workspace:$ARG_WORKSPACE_VERSION
 
 ARG ARG_WORKSPACE_FLAVOR="gpu"
 ENV WORKSPACE_FLAVOR=$ARG_WORKSPACE_FLAVOR
